@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_12_061928) do
+ActiveRecord::Schema.define(version: 2019_07_12_080015) do
 
   create_table "changelogs", force: :cascade do |t|
     t.string "from"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_07_12_061928) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "link"
   end
 
 end
